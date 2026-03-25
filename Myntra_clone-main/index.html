@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra Clone</title>
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
-    
 </head>
 <body>
 
-
     <!-- Nav bar -->
-    <header>
-            <div class="logo">
-                <a href="#"><img class="myntra_home" src="Images/Myntra Logo.png" alt="Myntra logo"></a>
-            </div>
-            <div class="navbar">
+    <header class="site-header">
+        <div class="top-bar">
+            <a class="logo" href="#" aria-label="Myntra home">
+                <img class="myntra_home" src="Images/Myntra Logo.png" alt="Myntra logo">
+            </a>
+
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <nav id="mainNav" class="navbar" aria-label="Primary navigation">
                 <a href="#">Home</a>
                 <a href="#">Women</a>
                 <a href="#">Kids</a>
-                <a href="#">Home and living</a>
+                <a href="#">Home & Living</a>
                 <a href="#">Beauty</a>
                 <a href="#">Studio <sup>New</sup></a>
-            </div>
+            </nav>
+
             <div class="searchbar">
                 <span class="material-symbols-outlined search_icon">search</span>
-                <input class="search_input" placeholder="Search for products, brands and more">
+                <label class="sr-only" for="searchInput">Search products, brands and more</label>
+                <input id="searchInput" class="search_input" type="search" placeholder="Search for products, brands and more">
             </div>
 
             <div class="action_bar">
-                <div class="action_container">
+                <a href="#" class="action_container" aria-label="Profile">
                     <span class="material-symbols-outlined action_icon">person</span>
                     <span class="action_name">Profile</span>
-                </div>
-                
-                <div class="action_container">
+                </a>
+                <a href="#" class="action_container" aria-label="Wishlist">
                     <span class="material-symbols-outlined">favorite</span>
                     <span class="action_name">Wishlist</span>
-                </div>
-
-                <div class="action_container">
+                </a>
+                <a href="#" class="action_container" aria-label="Bag">
                     <span class="material-symbols-outlined">local_mall</span>
                     <span class="action_name">Bag</span>
-                </div>
+                </a>
             </div>
-            
+        </div>
     </header>
     <!-- Nav bar end -->
 
-
     <main>
-        <div class="banner">
-            <img class="banner_image" src="Images/Banner.jpg" alt="Main Banner">
-            
-        </div>
+        <section class="hero">
+            <div class="banner">
+                <img class="banner_image" src="Images/Banner.jpg" alt="Sale banner showcasing best deals">
+                <div class="banner-overlay">
+                    <h1>Up to 70% off</h1>
+                    <p>Shop trending styles from top brands at pocket-friendly prices.</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
 
-        <div class="category">Pocket Friendly Price</div>
-        <div class="category_items">
-            <a href="#"><img class="sales_items" src="Images/f2.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/men f.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/shoes.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/Style one.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/men f.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/f7.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/shoes.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/f2.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/men f.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/f2.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/men f.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/f3.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/f5.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/f6.jpg"></a>
-            <a href="#"><img class="sales_items" src="Images/f7.jpg"></a>
-        </div>
+        <section class="category-section">
+            <h2 class="category">Pocket-Friendly Picks</h2>
+            <div class="category_items" aria-label="Product categories">
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/f2.jpg" alt="Category 1"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/men f.jpg" alt="Category 2"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/shoes.jpg" alt="Category 3"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/Style one.jpg" alt="Category 4"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/men f.jpg" alt="Category 5"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/f7.jpg" alt="Category 6"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/shoes.jpg" alt="Category 7"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/f2.jpg" alt="Category 8"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/men f.jpg" alt="Category 9"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/f2.jpg" alt="Category 10"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/men f.jpg" alt="Category 11"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/f3.jpg" alt="Category 12"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/f5.jpg" alt="Category 13"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/f6.jpg" alt="Category 14"></a></article>
+                <article class="product-card"><a href="#"><img class="sales_items" src="Images/f7.jpg" alt="Category 15"></a></article>
+            </div>
+        </section>
     </main>
+
     <footer>
         <div class="footer_container">
             <div class="footer_column">
@@ -81,39 +94,46 @@
                 <a href="#">Home</a>
                 <a href="#">Women</a>
                 <a href="#">Kids</a>
-                <a href="#">Home and living</a>
+                <a href="#">Home & Living</a>
                 <a href="#">Beauty</a>
                 <a href="#">Gift Card</a>
-                <a href="#">Myntra insider</a>
+                <a href="#">Myntra Insider</a>
             </div>
 
             <div class="footer_column">
-                <h3>Online Shopping</h3>
-                <a href="#">Home</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home and living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra insider</a>
+                <h3>Customer Policies</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQs</a>
+                <a href="#">Contact Us</a>
             </div>
 
             <div class="footer_column">
-                <h3>Online Shopping</h3>
-                <a href="#">Home</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home and living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra insider</a>
+                <h3>Help</h3>
+                <a href="#">Orders</a>
+                <a href="#">Track Order</a>
+                <a href="#">Size Guide</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Deals</a>
             </div>
         </div>
         <hr>
         <div class="copy_right">
-            @2024 Myntra. All rights reserved.
+            &copy; 2026 Myntra Clone. All rights reserved.
         </div>
-        
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', String(!expanded));
+            mainNav.classList.toggle('open');
+        });
+    </script>
 </body>
 </html> 
